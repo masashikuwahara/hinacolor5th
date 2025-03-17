@@ -1,6 +1,6 @@
 <template>
+  <h2>どちらが推し？</h2>
   <div v-if="player1 && player2" class="battle">
-    <h2>どちらが推し？</h2>
     <div class="candidate" @click="$emit('winnerSelected', player1)">
       <img :src="player1.image" :alt="player1.name" />
       <p>{{ player1.name }}</p>
