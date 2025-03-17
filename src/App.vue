@@ -4,13 +4,13 @@ import Battle from "./components/Battle.vue";
 import Ranking from "./components/Ranking.vue";
 
 const membersInitialState = [
-  { id: 1, name: "大野 愛実", image: "a.jpg", score: 0 },
-  { id: 2, name: "鶴崎 仁香", image: "b.jpg", score: 0 },
-  { id: 3, name: "坂井 新奈", image: "c.jpg", score: 0 },
-  { id: 4, name: "佐藤 優羽", image: "d.jpg", score: 0 },
-  { id: 5, name: "下田 衣珠季", image: "d.jpg", score: 0 },
-  { id: 6, name: "片山 紗希", image: "d.jpg", score: 0 },
-  { id: 7, name: "大田 美月", image: "d.jpg", score: 0 },
+  { id: 1, name: "大野 愛実", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250311-ci-121000.jpg", score: 0 },
+  { id: 2, name: "鶴崎 仁香", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250312-ci-124000.jpg", score: 0 },
+  { id: 3, name: "坂井 新奈", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250313-ty-120801.jpg", score: 0 },
+  { id: 4, name: "佐藤 優羽", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250314-dm-11001.jpg", score: 0 },
+  { id: 5, name: "下田 衣珠季", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5000/03/20250315-st-121201.jpg", score: 0 },
+  { id: 6, name: "片山 紗希", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250316-sai-181601.jpg", score: 0 },
+  { id: 7, name: "大田 美月", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250317-ci-120000.jpg", score: 0 },
 ];
 
 export default {
@@ -88,7 +88,7 @@ button:hover {
 
 <template>
   <div class="app">
-    <h1>五期生推しメンチェッカー</h1>
+    <h1>日向坂五期生推しメンチェッカー</h1>
     <Battle v-if="!finished" :player1="player1" :player2="player2" @winnerSelected="selectWinner" />
     <Ranking v-if="finished" :members="sortedMembers" />
     <button v-if="finished" @click="resetGame">スタートに戻る</button>

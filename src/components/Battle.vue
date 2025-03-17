@@ -39,4 +39,11 @@ export default {
   font-size: 24px;
   font-weight: bold;
 }
+img {
+  width: 320px;
+}
+@media screen and (max-width: 480px) {
+  img {width: 120px;
+  }
+}
 </style>
