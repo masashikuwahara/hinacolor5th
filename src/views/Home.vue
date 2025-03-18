@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>日向坂5期生推しメンチェッカー</h1>
+    <h1>日向坂五期生推しメンチェッカー</h1>
     <p>あなたの推しメンを決めよう！</p>
     <router-link to="/battle">
       <button class="start-button">推すしかねえので</button>
