@@ -1,46 +1,76 @@
 <template>
-  <h2>どちらが推し？</h2>
-  <div v-if="player1 && player2" class="battle">
-    <div class="candidate" @click="$emit('winnerSelected', player1)">
-      <img :src="player1.image" :alt="player1.name" />
-      <p>{{ player1.name }}</p>
+  <div v-if="player1 && player2" class="sentou">
+    <h2>どちらが推し？</h2>
+    <div class="battle-container">
+      <div class="player" @click="selectWinner(player1)">
+        <img :src="player1.image" alt="player1">
+        <p>{{ player1.name }}</p>
+      </div>
+      <div class="vs">VS</div>
+      <div class="player" @click="selectWinner(player2)">
+        <img :src="player2.image" alt="player2">
+        <p>{{ player2.name }}</p>
+      </div>
     </div>
-    <div class="vs">VS</div>
-    <div class="candidate" @click="$emit('winnerSelected', player2)">
-      <img :src="player2.image" :alt="player2.name" />
-      <p>{{ player2.name }}</p>
-    </div>
+    <button class="draw-button" @click="drawMatch">選べないよ</button>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["player1", "player2"]
+  props: {
+    player1: Object,
+    player2: Object
+  },
+  emits: ["winnerSelected", "draw"],
+  methods: {
+    selectWinner(winner) {
+      this.$emit("winnerSelected", winner);
+    },
+    drawMatch() {
+      this.$emit("draw");
+    }
+  }
 };
 </script>
 
 <style>
-.battle {
+.sentou {
+  text-align: center;
+}
+.battle-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
 }
-.candidate {
+.player {
   cursor: pointer;
   border: 2px solid #333;
   padding: 10px;
   transition: 0.3s;
 }
-.candidate:hover {
+.player:hover {
   transform: scale(1.1);
 }
-.vs {
-  font-size: 24px;
-  font-weight: bold;
+.draw-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #f39c12; /* オレンジ */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.draw-button:hover {
+  background-color: #e67e22;
 }
 img {
   width: 320px;
+}
+h2 {
+  text-align: center;
 }
 @media screen and (max-width: 480px) {
   img {width: 120px;
