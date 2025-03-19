@@ -15,6 +15,9 @@ export default {
 </script>
 
 <style>
+body {
+  font-family: monospace;
+}
 .home {
   text-align: center;
   margin-top: 50px;
