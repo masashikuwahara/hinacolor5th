@@ -23,7 +23,8 @@ export default {
       { id: 5, name: "下田衣珠季", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5000/03/20250315-st-121201.jpg", score: 0 },
       { id: 6, name: "片山紗希", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250316-sai-181601.jpg", score: 0 },
       { id: 7, name: "大田美月", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250317-ci-120000.jpg", score: 0 },
-      { id: 8, name: "高井俐香", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250318-ci-121000.jpg", score: 0 }
+      { id: 8, name: "高井俐香", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250318-ci-121000.jpg", score: 0 },
+{ id: 9, name: "松尾桜", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjdVL6Qlh6tvuNUsCXFgnImCVVT4kAIkjJ3G2DkcGEp6jfufXSH9bdy1d&s=10", score: 0 }
     ];
 
     const members = ref([...membersInitialState]);
