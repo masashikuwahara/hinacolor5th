@@ -68,7 +68,7 @@ export default {
 
     const resetGame = () => {
       members.value = [...membersInitialState];
-      matches.value = 5;
+      matches.value = 18;
       currentRound.value = 0;
       finished.value = false;
       player1.value = null;
