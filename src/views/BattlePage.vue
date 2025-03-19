@@ -28,7 +28,7 @@ export default {
     ];
 
     const members = ref([...membersInitialState]);
-    const matches = ref(16);
+    const matches = ref(18);
     const currentRound = ref(0);
     const finished = ref(false);
     const player1 = ref(null);
