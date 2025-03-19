@@ -66,6 +66,9 @@ export default {
 .draw-button:hover {
   background-color: #e67e22;
 }
+.vs {
+  font-size: 25px;
+}
 img {
   width: 320px;
 }
