@@ -68,6 +68,8 @@ export default {
 }
 .vs {
   font-size: 25px;
+  position: relative;
+  top: 100px;
 }
 img {
   width: 320px;
@@ -78,5 +80,10 @@ h2 {
 @media screen and (max-width: 480px) {
   img {width: 120px;
   }
+  .vs {
+  font-size: 25px;
+  position: relative;
+  top: 50px;
+}
 }
 </style>
