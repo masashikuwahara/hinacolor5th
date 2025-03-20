@@ -2,6 +2,9 @@
   <div class="home">
     <h1>日向坂五期生推しメンチェッカー</h1>
     <p>あなたの推しメンを決めよう！</p>
+    <div class="top">
+      <img src="https://daytripper.site/img/hinatazaka5th.jpg" alt="" class="hinata">
+    </div>
     <router-link to="/battle">
       <button class="start-button">推すしかねえので</button>
     </router-link>
@@ -17,6 +20,10 @@ export default {
 <style>
 body {
   font-family: monospace;
+}
+.hinata {
+  margin: auto;
+  width: 320px;
 }
 .home {
   text-align: center;
