@@ -24,11 +24,12 @@ export default {
       { id: 6, name: "片山紗希", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250316-sai-181601.jpg", score: 0 },
       { id: 7, name: "大田美月", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250317-ci-120000.jpg", score: 0 },
       { id: 8, name: "高井俐香", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250318-ci-121000.jpg", score: 0 },
-      { id: 9, name: "松尾桜", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250319-ci-120000.jpg", score: 0 }
+      { id: 9, name: "松尾桜", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250319-ci-120000.jpg", score: 0 },
+{ id: 10, name: "蔵盛妃那乃", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250320-ci-111000.jpg", score: 0 }
     ];
 
     const members = ref([...membersInitialState]);
-    const matches = ref(18);
+    const matches = ref(20);
     const currentRound = ref(0);
     const finished = ref(false);
     const player1 = ref(null);
@@ -68,7 +69,7 @@ export default {
 
     const resetGame = () => {
       members.value = [...membersInitialState];
-      matches.value = 18;
+      matches.value = 20;
       currentRound.value = 0;
       finished.value = false;
       player1.value = null;
