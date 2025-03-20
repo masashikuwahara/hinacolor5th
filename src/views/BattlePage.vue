@@ -29,7 +29,7 @@ export default {
     ];
 
     const members = ref([...membersInitialState]);
-    const matches = ref(18);
+    const matches = ref(20);
     const currentRound = ref(0);
     const finished = ref(false);
     const player1 = ref(null);
@@ -69,7 +69,7 @@ export default {
 
     const resetGame = () => {
       members.value = [...membersInitialState];
-      matches.value = 18;
+      matches.value = 20;
       currentRound.value = 0;
       finished.value = false;
       player1.value = null;
