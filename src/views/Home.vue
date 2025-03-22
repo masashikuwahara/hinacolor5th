@@ -8,12 +8,24 @@
     <router-link to="/battle">
       <button class="start-button">推すしかねえので</button>
     </router-link>
+    <div class="history">-更新履歴-</div>
+  <div v-for="history in histories">
+    {{ history.date }} {{ history.content }}
+  </div>
+    <p>v.1.0.0</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home"
+  name: "Home",
+  data(){
+    return {
+      histories: [
+        { date: '2025.03.15', content: 'リリースしました'}
+      ],
+    }
+  }
 };
 </script>
 
@@ -40,5 +52,8 @@ body {
 }
 .start-button:hover {
   background-color: #0056b3;
+}
+.history {
+  margin: 10px;
 }
 </style>
