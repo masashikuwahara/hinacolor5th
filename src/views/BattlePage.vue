@@ -16,10 +16,10 @@ export default {
   components: { Battle, Ranking },
   setup() {
     const membersInitialState = [
-      { id: 1, name: "大野愛実", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250311-ci-121000.jpg", score: 0 },
-      { id: 2, name: "鶴崎仁香", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250312-ci-124000.jpg", score: 0 },
-      { id: 3, name: "坂井新奈", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250313-ty-120801.jpg", score: 0 },
-      { id: 4, name: "佐藤優羽", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250314-dm-11001.jpg", score: 0 },
+      { id: 1, name: "大野愛実", image: "https://cdn.hinatazaka46.com/images/14/de6/51f1b2474317dbf1f8883964d91f6-03.jpg", score: 0 },
+      { id: 2, name: "鶴崎仁香", image: "https://cdn.hinatazaka46.com/images/14/2d0/201d8f3005ee07574c8ce7db5cb16-03.jpg", score: 0 },
+      { id: 3, name: "坂井新奈", image: "https://cdn.hinatazaka46.com/images/14/c9d/87011522b663e9b274bacf7644c16-03.jpg", score: 0 },
+      { id: 4, name: "佐藤優羽", image: "https://cdn.hinatazaka46.com/images/14/d51/52c019274111cb3b916a0f8aac3b8-03.jpg", score: 0 },
       { id: 5, name: "下田衣珠季", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5000/03/20250315-st-121201.jpg", score: 0 },
       { id: 6, name: "片山紗希", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/2025/03/20250316-sai-181601.jpg", score: 0 },
       { id: 7, name: "大田美月", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250317-ci-120000.jpg", score: 0 },
