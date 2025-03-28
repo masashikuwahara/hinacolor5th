@@ -12,7 +12,7 @@
   <div v-for="history in histories">
     {{ history.date }} {{ history.content }}
   </div>
-    <p>v.1.0.0</p>
+    <p>v.1.0.1</p>
   </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
   data(){
     return {
       histories: [
+        { date: '2025.03.29', content: '写真を更新しました'},
         { date: '2025.03.15', content: 'リリースしました'}
       ],
     }

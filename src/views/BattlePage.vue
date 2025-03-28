@@ -24,8 +24,8 @@ export default {
       { id: 6, name: "片山紗希", image: "https://cdn.hinatazaka46.com/images/14/37a/d13677487443abce1aac730b8e2c4-03.jpg", score: 0 },
       { id: 7, name: "大田美月", image: "https://cdn.hinatazaka46.com/images/14/bfb/e0ddea499c10c4aaf5d3c4a4524f1-03.jpg", score: 0 },
       { id: 8, name: "高井俐香", image: "https://cdn.hinatazaka46.com/images/14/399/71117b1d7bafbd32e4f8b7421517b-03.jpg", score: 0 },
-      { id: 9, name: "松尾桜", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250319-ci-120000.jpg", score: 0 },
-      { id: 10, name: "蔵盛妃那乃", image: "https://www.thefirsttimes.jp/admin/wp-content/uploads/5025/03/20250320-ci-111000.jpg", score: 0 }
+      { id: 9, name: "松尾桜", image: "https://cdn.hinatazaka46.com/images/14/389/6768010684b4668881ef3651c1732-05.jpg", score: 0 },
+      { id: 10, name: "蔵盛妃那乃", image: "https://cdn.hinatazaka46.com/images/14/55e/587c555a3dcfc93e8eb67473e0a6e-05.jpg", score: 0 }
     ];
 
     const members = ref([...membersInitialState]);

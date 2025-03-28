@@ -1,7 +1,7 @@
 <template>
   <Transition name="fade">
     <div v-if="showRanking" class="container">
-      <h2>結果はこちら・・・</h2>
+      <h2>結果はこちら</h2>
       <ol class="ranking-list">
         <li v-for="member in members" :key="member.id">
           {{ member.name }} <br>
